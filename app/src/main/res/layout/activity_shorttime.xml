@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/giveappfirst"
+    tools:context="shorttime.shorttime"
+    android:alpha="0.8"
+    >
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="여러분의 전문 지식, 취미"
+        android:textStyle="bold"
+
+        android:textSize="30sp"
+                />
+    <TextView
+        android:textStyle="bold"
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=" 또는 특별한 기술을 "
+
+        android:textSize="30sp"
+        />
+
+    <TextView
+
+    android:id="@+id/textView8"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="필요한 사람들과 공유하세요" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="150dp"
+        android:gravity="center"
+        android:text="재능나눔 사회봉사 앱"
+        android:textColor="#00FF00"
+        android:textSize="30sp"
+
+        android:textStyle="bold" />
+
+</LinearLayout>

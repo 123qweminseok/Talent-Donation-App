@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boder"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="제목"
+        android:textSize="17dp"
+        android:layout_weight="9"
+        android:textStyle="bold" />
+
+
+
+    <!--   조회수 기능. grvity는 자신의 뷰 안의 데이터 정렬
+    layout_gravity는 자신을 포함하고 있는 부모 위젯 레이아웃에서 옵션에 따라 정렬.
+    근데 이걸로 width부분 자동으로 설정하고 우측으로 넘기려고 했는데 안되서 안에 데이터만 수정해주는걸로 했다.
+    weight로 그래서 비율 맞춰주는걸로 설정함
+    -->
+    <!--        여기가 데이터 나올 장소다-->
+
+    <TextView
+        android:id="@+id/zozo"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="조회수:"
+
+        ></TextView>
+    <TextView
+
+android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="내용"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/speech_bubble"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/speech_bubble"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/bubble_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:text="1"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="|"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="날짜,시간"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>
