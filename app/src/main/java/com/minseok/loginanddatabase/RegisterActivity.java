@@ -79,7 +79,7 @@
                     // 사용자가 입력한 이메일과 비밀번호 가져오기
                     String strEmail = mEtEmail.getText().toString(); //입력한 텍스트를 불러와 문자열로 변환하고
                     String strPwd = mEtpwd.getText().toString();//이것도
-                    String memo= editTextText.getText().toString();//이것도
+                    String memo= editTextText.getText().toString();//불러옴.
 
 
                     // Firebase Auth 객체의 createUserWithEmailAndPassword 메서드를 사용하여 사용자를 생성한다.(이메일,비번) 이걸로 사용자 정보가 설정됨.
@@ -108,6 +108,7 @@
                                 account.setEmailId(firebaseUser.getEmail());
                                 //사용자 패스워드도 계정 정보에 설정
                                 account.setPassword(strPwd);
+                                account.setMemo(memo);
                                 //위 값들은 다 UserAccount 클래스에 있는거다. 직접 만든것임.
                                 //내가 적은  텍스트를 momo에 저장한걸 보내서 account객참변에 저장해줌.
 

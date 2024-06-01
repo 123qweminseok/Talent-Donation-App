@@ -16,6 +16,15 @@ public class UserAccount  {
     public int visit=0; //추가
     private String UID;
     private String nickname; //추가
+    private String memo; //추가
+
+    public String getMemo() {
+        return memo;
+    }
+
+    public void setMemo(String memo) {
+        this.memo = memo;
+    }
 
     public String getNickname() { //추가
         return nickname;

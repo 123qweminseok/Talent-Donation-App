@@ -201,36 +201,6 @@
             android:gravity="center"
             android:paddingBottom="30px">
 
-            <LinearLayout
-                android:id="@+id/regist_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/regist_phone_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30px"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="bold"
-                    android:gravity="left"
-                    android:text="휴대폰 번호:"
-                    android:textColor="#000000"
-                    android:textSize="12sp"
-                    tools:ignore="RtlHardcoded" />
-
-                <EditText
-                    android:id="@+id/regist_phone_edittext"
-                    android:layout_width="300dp"
-                    android:layout_height="36dp"
-                    android:background="@drawable/registtbox"
-                    android:paddingLeft="10dp"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -297,7 +267,7 @@ s
             android:layout_height="0dp"
             android:layout_weight="3"
             android:gravity="center">
-
+<!--이 부분은 디자인적 요소. 모두 동의합니다 누르려면 자바 파일에서 알고리즘 구현 하면 됨-->
             <CheckBox
                 android:id="@+id/agree1_checkbox"
                 android:layout_width="wrap_content"

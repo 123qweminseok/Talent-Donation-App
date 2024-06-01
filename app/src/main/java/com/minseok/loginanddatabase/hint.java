@@ -63,6 +63,9 @@ public class hint extends AppCompatActivity {
                                         //경우 오류가 난다.
                                         UserAccount userAccount = dataSnapshot.getValue(UserAccount.class);
                                         if (userAccount != null) {
+                                            String hint = userAccount.getMemo(); // 예시: 힌트를 가져오는 메서드 호출
+                                            edit2.setText(hint);
+
                                             // 힌트를 가져와서 edit2에 설정
                                             break; // 한 번만 설정하고 루프 종료
                                         }

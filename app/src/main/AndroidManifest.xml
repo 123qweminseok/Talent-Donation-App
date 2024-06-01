@@ -16,13 +16,18 @@
         android:theme="@style/Theme.LoginandDatabase"
         tools:targetApi="31">
         <activity
+            android:name="Myinformation.protect"
+            android:exported="false" />
+        <activity
+            android:name="Myinformation.myinforule"
+            android:exported="false" />
+        <activity
             android:name="shorttime.ImageViewaccount"
             android:exported="false" />
         <activity
             android:name="shorttime.shorttime"
             android:exported="false" />
         <activity android:name="SearchView.SearchActivity" /> <!-- 이 줄을 추가 -->
-x`
         <activity
             android:name=".hint"
             android:exported="false" />
@@ -47,8 +52,6 @@ x`
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

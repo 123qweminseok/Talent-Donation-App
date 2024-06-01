@@ -154,14 +154,16 @@
 
             <TextView
                 android:id="@+id/find"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="비번 힌트"
                 android:textAllCaps="true"
-                android:textColor="#737373"
-                android:textSize="15sp" />
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/line"
@@ -175,13 +177,14 @@
                 tools:srcCompat="@drawable/line" />
 
             <TextView
+                android:textStyle="bold"
                 android:id="@+id/gogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="회원가입"
-                android:textColor="#737373"
+                android:textColor="#000000"
                 android:textSize="15sp" />
         </LinearLayout>
     </LinearLayout>

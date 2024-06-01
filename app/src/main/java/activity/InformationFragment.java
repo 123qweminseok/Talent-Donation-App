@@ -10,6 +10,7 @@
     import android.view.LayoutInflater;
     import android.view.View;
     import android.view.ViewGroup;
+    import android.widget.Button;
     import android.widget.ImageView;
     import android.widget.TextView;
     import android.widget.Toast;
@@ -49,12 +50,17 @@
     import Myinformation.MyCalendarViewFragment;
     import Myinformation.countFregment;
     import Myinformation.list1;
+    import Myinformation.myinforule;
+    import Myinformation.protect;
 
     public class InformationFragment extends Fragment {
         TextView button;//내가 쓴 글 보기 액티비티
         TextView button2; //내가 쓴 댓글 보기 액티비티
         Boolean setting = false;//이건 xml파일과 상관없는거라 전역으로 선언해주는게 편함.
         TextView button3;//로그아웃 버튼
+
+        TextView button10;
+        TextView button11;
 
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
@@ -86,6 +92,38 @@
             name = rootView.findViewById(R.id.name);
             email = rootView.findViewById(R.id.email);
             imageView6 = rootView.findViewById(R.id.imageView6);
+
+            button10= rootView.findViewById(R.id.button10);//개인정보처리
+
+            button10.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(getContext(), myinforule.class);
+                    startActivity(intent);
+
+
+
+                }
+            });
+
+            button11=rootView.findViewById(R.id.button11);
+            button11.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+
+                    Intent intent = new Intent(getContext(), protect.class);
+                    startActivity(intent);
+
+
+
+                }
+            });
+
+
+
 
             button = rootView.findViewById(R.id.button4);//내가 쓴 글 보기
             button.setOnClickListener(new View.OnClickListener() {
@@ -227,7 +265,6 @@
                         Log.d("확인하기3", uid); //현재 uid가져옴.
 
                         String nickname1 = item.getNickname();
-                        Log.d("확인하기4", nickname1); //현재 uid가져옴.
 
                         //현재 로그인된 사용자와 위에서 현재 사용자 뽑아준것.
                         if (uid.equals(item.getUID())) {
@@ -238,14 +275,12 @@
                             name.setText(nickname);
                             //즉 클릭하면 화면에 뜸. 즉 data
                         }
-                        Log.d("1212124", nickname1); //현재 uid가져옴.
 
                         if (uid.equals(item.getUID())) {
                             String emailId = item.getEmailId();
                             email.setText(emailId);
                             //즉 클릭하면 화면에 뜸. 즉 data
                         } else {
-                            Log.d("ㅂㅂㅇㅂ", "gdgd");
                         }
                     }
                 }
