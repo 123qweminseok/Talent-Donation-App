@@ -1,5 +1,6 @@
 # 재능기부 어플 프로젝트 (Talent Donation App)  
 <small>기본 설명: JAVA 언어로 구성했으며 제 첫 프로젝트입니다.</small>
+<small>상세 설명: (https://blog.naver.com/everybetter/223549200330) 해당 링크를 클릭하시면 보실 수 있습니다.</small>
 
 ---
 
